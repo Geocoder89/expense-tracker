@@ -13,7 +13,7 @@ import {
   Pie,
   PieChart,
 } from 'recharts';
-import { Expense } from './Expense'; // Adjust the import according to your structure
+import { Expense } from '../../interfaces/Expense'; // Adjust the import according to your structure
 
 const ExpenseChart: React.FC = () => {
   const expenses = useSelector((state: RootState) => state.expenses);
@@ -42,6 +42,7 @@ const ExpenseChart: React.FC = () => {
   }, {});
 
   const pieChartData = Object.entries(expensesByCategory)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     .filter(([_category, total]) => total > 0) // Ensure we only include non-zero totals
     .map(([category, total]) => ({
       category,
@@ -107,7 +108,7 @@ const ExpenseChart: React.FC = () => {
                 outerRadius={80}
                 label
               >
-                {pieChartData.map((entry, index) => (
+                {pieChartData.map((_entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
