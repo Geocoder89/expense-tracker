@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.custom-calendar {
+  background-color: white;
+  color: black;
+}
+
+.dark .custom-calendar {
+  background-color: #19346b; /* dark-blue */
+  color: white;
+  border: 1px solid #102245; /* dark-secondary */
+}
+
+.custom-calendar .react-datepicker__day--selected {
+  background-color: #102245; /* dark-secondary for selected day */
+  color: white;
+}
