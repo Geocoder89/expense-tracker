@@ -38,7 +38,7 @@ To run this application locally, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Geocoder89/expense-tracker.git
-   cd personal-expense-tracker
+   cd expense-tracker
 
 2. **Install Dependencies:**
    ```bash
