@@ -57,7 +57,7 @@ To run this application locally, follow these steps:
 
 ## Assumptions
 
-Persistence is handled solely by Local Storage due to ease and to save time since it was essentially a frontend task, the mode either light or dark initially is dependent on your presences but you can switch this using the switch at the top
+Persistence is handled solely by Local Storage due to ease and to save time since it was essentially a frontend task, the mode either light or dark initially is dependent on your preferences but you can switch this using the switch at the navbar and this gets persisted by local Storage as well
 
 ## Testing Optional Features
 Run Tests with Jest using the command below
