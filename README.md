@@ -12,6 +12,8 @@
 ## Overview
 This is a simple Expense Tracker application built with React and Redux. Users can add, edit, and delete expenses, categorizing them for better financial tracking. The application utilizes local state management for forms and Redux for global state management of expenses, it is available in both light and dark modes.
 
+It is currently deployed for a live demo on this link :
+ https://expense-tracker-sigma-blue.vercel.app/
 
 
 ## Technologies and Libraries Used
@@ -32,6 +34,8 @@ This is a simple Expense Tracker application built with React and Redux. Users c
 - **Jest & React-testing-library** - These libraries were used to run unit tests on the Expense Form, Expense List and Expense Summary Components.
 
 ## Setup Instructions
+
+
 
 To run this application locally, follow these steps:
 
