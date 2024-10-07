@@ -36,7 +36,11 @@ const ExpenseList: React.FC = () => {
       (expense.description ?? '')
         .toLowerCase()
         .includes(searchTerm.toLowerCase()) &&
-      (!selectedCategory || expense.category === selectedCategory.value) &&
+        (!selectedCategory || 
+          (typeof expense.category === 'string' 
+            ? expense.category === selectedCategory.value 
+            : expense.category.value === selectedCategory.value)
+        ) &&
       (!startDate || new Date(expense.date) >= startDate) &&
       (!endDate || new Date(expense.date) <= endDate)
   );
